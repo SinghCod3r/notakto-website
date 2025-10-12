@@ -1,8 +1,7 @@
 import BackgroundImage from "@/components/BackgroundImage";
 
 export const MenuLayout = ({ children }: { children: React.ReactNode }) => (
-  <div className="relative flex-col min-h-screen bg-black flex items-center justify-center">
-    <BackgroundImage />
-    {children}
-  </div>
+	<div className="flex-col min-h-screen bg-black bg-[url('/background.png')] bg-no-repeat bg-cover bg-center flex items-center justify-center">
+		{children}
+	</div>
 );
